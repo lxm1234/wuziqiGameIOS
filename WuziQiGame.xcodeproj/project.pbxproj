@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D93B98651FE3A2D00082930D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D93B98641FE3A2D00082930D /* Podfile */; };
+		D93B98681FE3A82D0082930D /* GGHostListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93B98671FE3A82D0082930D /* GGHostListTableViewController.m */; };
+		D93B986B1FE3C7080082930D /* GGPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = D93B986A1FE3C7080082930D /* GGPacket.m */; };
 		D9E55F661FE1492600F8EE2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E55F651FE1492600F8EE2A /* AppDelegate.m */; };
 		D9E55F691FE1492600F8EE2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E55F681FE1492600F8EE2A /* ViewController.m */; };
 		D9E55F6C1FE1492600F8EE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E55F6A1FE1492600F8EE2A /* Main.storyboard */; };
@@ -25,6 +28,7 @@
 		D9E55FB21FE2239700F8EE2A /* GGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E55FB11FE2239700F8EE2A /* GGPlayer.m */; };
 		D9E55FB51FE2299400F8EE2A /* GGGreedyAI.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E55FB41FE2299400F8EE2A /* GGGreedyAI.m */; };
 		D9E55FB91FE229BB00F8EE2A /* GGMiniMaxAI.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E55FB81FE229BB00F8EE2A /* GGMiniMaxAI.m */; };
+		E5E24224C8560F82083B6CC6 /* Pods_WuziQiGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353FEF1B7B3979E1BA3BD560 /* Pods_WuziQiGame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F7E9669E1F856064597FB6A /* Pods-WuziQiGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuziQiGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WuziQiGame/Pods-WuziQiGame.debug.xcconfig"; sourceTree = "<group>"; };
+		353FEF1B7B3979E1BA3BD560 /* Pods_WuziQiGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WuziQiGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37A22A48C7AF45D025E5079 /* Pods-WuziQiGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuziQiGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-WuziQiGame/Pods-WuziQiGame.release.xcconfig"; sourceTree = "<group>"; };
+		D93B98641FE3A2D00082930D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D93B98661FE3A82D0082930D /* GGHostListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGHostListTableViewController.h; sourceTree = "<group>"; };
+		D93B98671FE3A82D0082930D /* GGHostListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGHostListTableViewController.m; sourceTree = "<group>"; };
+		D93B98691FE3C7080082930D /* GGPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGPacket.h; sourceTree = "<group>"; };
+		D93B986A1FE3C7080082930D /* GGPacket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPacket.m; sourceTree = "<group>"; };
 		D9E55F611FE1492600F8EE2A /* WuziQiGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WuziQiGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E55F641FE1492600F8EE2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D9E55F651FE1492600F8EE2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E24224C8560F82083B6CC6 /* Pods_WuziQiGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,13 +119,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93D691380DE8710F5430CE63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F7E9669E1F856064597FB6A /* Pods-WuziQiGame.debug.xcconfig */,
+				C37A22A48C7AF45D025E5079 /* Pods-WuziQiGame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9CF91552A7CDDD28A546FD8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				353FEF1B7B3979E1BA3BD560 /* Pods_WuziQiGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D9E55F581FE1492600F8EE2A = {
 			isa = PBXGroup;
 			children = (
+				D93B98641FE3A2D00082930D /* Podfile */,
 				D9E55F631FE1492600F8EE2A /* WuziQiGame */,
 				D9E55F7C1FE1492600F8EE2A /* WuziQiGameTests */,
 				D9E55F871FE1492600F8EE2A /* WuziQiGameUITests */,
 				D9E55F621FE1492600F8EE2A /* Products */,
+				93D691380DE8710F5430CE63 /* Pods */,
+				9CF91552A7CDDD28A546FD8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +204,8 @@
 				D9E55F981FE14FDA00F8EE2A /* SettingViewController.m */,
 				D9E55FA41FE1687A00F8EE2A /* CGBroadViewController.h */,
 				D9E55FA51FE1687A00F8EE2A /* CGBroadViewController.m */,
+				D93B98661FE3A82D0082930D /* GGHostListTableViewController.h */,
+				D93B98671FE3A82D0082930D /* GGHostListTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,6 +249,8 @@
 				D9E55FB41FE2299400F8EE2A /* GGGreedyAI.m */,
 				D9E55FB71FE229BB00F8EE2A /* GGMiniMaxAI.h */,
 				D9E55FB81FE229BB00F8EE2A /* GGMiniMaxAI.m */,
+				D93B98691FE3C7080082930D /* GGPacket.h */,
+				D93B986A1FE3C7080082930D /* GGPacket.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -225,9 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9E55F8D1FE1492600F8EE2A /* Build configuration list for PBXNativeTarget "WuziQiGame" */;
 			buildPhases = (
+				7DEB9134B55905DE548C72A1 /* [CP] Check Pods Manifest.lock */,
 				D9E55F5D1FE1492600F8EE2A /* Sources */,
 				D9E55F5E1FE1492600F8EE2A /* Frameworks */,
 				D9E55F5F1FE1492600F8EE2A /* Resources */,
+				01465580BDBA9D71551B797F /* [CP] Embed Pods Frameworks */,
+				80E36ADD12F714B952A875B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93B98651FE3A2D00082930D /* Podfile in Resources */,
 				D9E55F9F1FE154E100F8EE2A /* music.mp3 in Resources */,
 				D9E55F711FE1492600F8EE2A /* LaunchScreen.storyboard in Resources */,
 				D9E55F6E1FE1492600F8EE2A /* Assets.xcassets in Resources */,
@@ -348,6 +389,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01465580BDBA9D71551B797F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WuziQiGame/Pods-WuziQiGame-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WuziQiGame/Pods-WuziQiGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DEB9134B55905DE548C72A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WuziQiGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80E36ADD12F714B952A875B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WuziQiGame/Pods-WuziQiGame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9E55F5D1FE1492600F8EE2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -361,7 +456,9 @@
 				D9E55FA61FE1687A00F8EE2A /* CGBroadViewController.m in Sources */,
 				D9E55FAB1FE1A2B400F8EE2A /* CGBoard.m in Sources */,
 				D9E55F741FE1492600F8EE2A /* main.m in Sources */,
+				D93B986B1FE3C7080082930D /* GGPacket.m in Sources */,
 				D9E55FA31FE1685300F8EE2A /* CGBroadView.m in Sources */,
+				D93B98681FE3A82D0082930D /* GGHostListTableViewController.m in Sources */,
 				D9E55F661FE1492600F8EE2A /* AppDelegate.m in Sources */,
 				D9E55F991FE14FDA00F8EE2A /* SettingViewController.m in Sources */,
 			);
@@ -524,6 +621,7 @@
 		};
 		D9E55F8E1FE1492600F8EE2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F7E9669E1F856064597FB6A /* Pods-WuziQiGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +637,7 @@
 		};
 		D9E55F8F1FE1492600F8EE2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C37A22A48C7AF45D025E5079 /* Pods-WuziQiGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

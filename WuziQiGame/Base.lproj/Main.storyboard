@@ -220,11 +220,61 @@
                         <outlet property="btnUndo" destination="iFC-WX-9z0" id="AK4-IA-rSi"/>
                         <outlet property="lblInformation" destination="a5W-Je-Kdp" id="HOB-32-BhZ"/>
                         <outlet property="whiteTimer" destination="XGl-GQ-Vug" id="NkX-3Z-FF0"/>
+                        <segue destination="WBS-y7-zCJ" kind="show" identifier="findGame" id="mOz-ip-YZS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHK-37-NCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1488.8" y="-619.34032983508246"/>
+        </scene>
+        <!--主机列表-->
+        <scene sceneID="8sW-nk-FVQ">
+            <objects>
+                <tableViewController id="9Ag-VV-mA4" customClass="GGHostListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ojo-HP-lQl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="B5L-w5-Hfk" style="IBUITableViewCellStyleDefault" id="hKQ-FL-LZ0">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hKQ-FL-LZ0" id="nd5-qy-4GI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B5L-w5-Hfk">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9Ag-VV-mA4" id="bVN-vc-fDW"/>
+                            <outlet property="delegate" destination="9Ag-VV-mA4" id="cLe-YP-afB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="主机列表" id="0io-J7-gjF">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="58F-jr-yN4">
+                            <connections>
+                                <action selector="onClickBack:" destination="9Ag-VV-mA4" id="iK0-7s-EBc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="新建游戏" id="a5e-jm-K3p">
+                            <connections>
+                                <action selector="onClickCreate:" destination="9Ag-VV-mA4" id="jAT-x2-OLn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wWi-tz-mV3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3086" y="-619"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="K6i-kh-S0S">
@@ -323,6 +373,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDV-0L-h3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1489" y="34"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xPz-z2-fsO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WBS-y7-zCJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Aa0-4h-N0D">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9Ag-VV-mA4" kind="relationship" relationship="rootViewController" id="Ov5-BZ-Hnq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iw3-iP-leA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2278" y="-619"/>
         </scene>
     </scenes>
     <resources>

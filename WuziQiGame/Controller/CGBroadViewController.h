@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CGBroadView.h"
 
+@class GCDAsyncSocket;
 
 typedef NS_ENUM(NSInteger,GGMode)
 {
@@ -20,4 +21,5 @@ typedef NS_ENUM(NSInteger,GGMode)
 @interface CGBroadViewController : UIViewController<GGBoardViewDelegate>
 @property (weak, nonatomic) IBOutlet CGBroadView *broadView;
 @property (assign, nonatomic) enum GGMode gameMode;
+- (void)parseData:(NSData*)data;
 @end
