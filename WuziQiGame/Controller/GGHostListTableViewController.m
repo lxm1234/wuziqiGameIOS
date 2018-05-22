@@ -154,10 +154,12 @@
 - (void)netServiceBrowser:(NSNetServiceBrowser *)browser didNotSearch:(NSDictionary<NSString *,NSNumber *> *)errorDict {
     [self stopBrowsing];
 }
+
+
+#pragma mark --NSNetServiceDelegate
 - (void)netServiceDidPublish:(NSNetService *)service {
     NSLog(@"Bonjour Service Published: domain(%@) type(%@) name(%@) port(%i)", [service domain], [service type], [service name], (int)[service port]);
 }
-#pragma mark --NSNetServiceDelegate
 - (void)netService:(NSNetService *)service didNotPublish:(NSDictionary *)errorDict {
     NSLog(@"Failed to Publish Service: domain(%@) type(%@) name(%@) - %@", [service domain], [service type], [service name], errorDict);
 }
